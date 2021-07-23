@@ -1,0 +1,67 @@
+.container{
+    height: 450px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleBox{
+    height: 20%;
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.joke{
+    height: 20%;
+    width: 70%;
+}
+.title, .jokeTitle{
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 65px;
+    /* identical to box height, or 119% */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* light text */
+
+    color: #FFFFFF;
+    animation: soonJumping 3.5s infinite;
+}
+.title{
+    font-size: 64px;
+    transition: .7s;
+}
+.jokeTitle{
+    font-size: 36px;
+    animation: blyming 5s infinite;
+    transition: .7s;
+}
+
+
+@keyframes soonJumping {
+    0%{transform: translateY(0);}
+    20%{transform: translateY(-70px);}
+    40%{transform: translateY(0);}
+    60%{transform: translateY(-70px);}
+    80%{transform: translateY(0);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes blyming {
+    0%{opacity: 0}
+    20%{opacity: 0}
+    40%{opacity: 1}
+    60%{opacity: 0}
+    80%{opacity: 1}
+    100%{opacity: 0}
+}

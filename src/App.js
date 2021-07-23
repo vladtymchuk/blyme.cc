@@ -1,12 +1,15 @@
 import React from "react";
-import './App.css';
+import s from './App.module.css';
+import Header from "./components/Header/Header";
+import Preview from "./components/Preview/Preview";
 
 function App() {
-  return (
-    <div>
-      
-    </div>
-  );
+    return (
+        <div className={s.container}>
+            <Header/>
+            <Preview/>
+        </div>
+    );
 }
 
 export default App;
